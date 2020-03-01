@@ -21,7 +21,7 @@ Make sure you set your DNS like this:
 
 You can ask for help via Discord DMs or through GitHub.<br>
 <br>
-@4house#1218 - Zukyo
+Discord: 4house#1218
 
 # Credits
 * <a href=https://github.com/ppy>peppy</a> - For the game omega
