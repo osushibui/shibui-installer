@@ -196,11 +196,11 @@ git clone https://github.com/osufx/secret.git
 cd $MasterDir
 echo "Backend server is done!"
 
-echo "Setting up PhpMyAdmin..."
+echo "Setting up PHPMyAdmin..."
 apt-get install phpmyadmin -y
 cd /var/www/osu.ppy.sh
 ln -s /usr/share/phpmyadmin phpmyadmin
-echo "PhpMyAdmin setup is done!"
+echo "PHPMyAdmin setup is done!"
 
 echo "Making up certificate for SSL"
 cd /root/
