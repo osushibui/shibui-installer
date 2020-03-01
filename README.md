@@ -27,4 +27,4 @@ Discord: 4house#1218
 * <a href=https://github.com/ppy>peppy</a> - For the game omega
 * <a href=https://github.com/osuripple>Ripple</a> - The reason we're here right now?
 * <a href=https://github.com/osuthailand>Ainu</a> - For the majority of the basic edits used and this README (but edited)
-* <a href=https://github.com/EmilySunpy>Sunpy</a> - You know her! Thanks for most commands and dependencies!
+* <a href=https://github.com/EmilySunpy>Sunpy</a> - Thanks for providing commands and dependencies, etc. :3
