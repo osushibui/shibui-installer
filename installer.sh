@@ -98,7 +98,7 @@ git submodule init && git submodule update
 python3.6 -m pip install -r requirements.txt
 python3.6 setup.py build_ext --inplace
 python3.6 pep.py
-sed -i 's#root#'$mysql_usr'#g; s#changeme#'$peppy_cikey'#g'; s#http://.../letsapi#'http://127.0.0.1:5002/letsapi'#g; s#http://cheesegu.ll/api#'https://storage.kurikku.pw/api'#g' config.ini
+sed -i 's#root#'$mysql_usr'#g; s#changeme#'$peppy_cikey'#g'; s#http://127.0.0.1:5002/letsapi#'http://127.0.0.1:5002/letsapi'#g; s#http://storage.ainu.pw/api#'https://storage.kurikku.pw/api'#g' config.ini
 sed -E -i -e 'H;1h;$!d;x' config.ini -e 's#password = #password = '$mysql_psw'#'
 cd $MasterDir
 echo "Bancho server setup is done!"
@@ -159,7 +159,7 @@ mv /root/go/src/github.com/osushibui/hanayo/static ./static
 mv /root/go/src/github.com/osushibui/hanayo/templates ./templates
 mv /root/go/src/github.com/osushibui/hanayo/website-docs ./website-docs
 ./hanayo
-sed -i 's#ListenTo=#ListenTo=127.0.0.1:'$hanayo_port'#g; s#AvatarURL=#AvatarURL=https://a.'$domain'#g; s#BaseURL=#BaseURL=https://'$domain'#g; s#APISecret=#APISecret='$hanayo_apisecret'#g; s#BanchoAPI=#BanchoAPI=https://c.'$domain'#g; s#MainRippleFolder=#MainRippleFolder='$MasterDir'#g; s#AvatarFolder=#AvatarFolder='$MasterDir'/nginx/avatar-server/avatars#g; s#RedisEnable=false#RedisEnable=true#g' hanayo.conf
+sed -i 's#ListenTo=#ListenTo=127.0.0.1:'$hanayo_port'#g; s#AvatarURL=#AvatarURL=https://a.'$domain'#g; s#BaseURL=#BaseURL=https://'$domain'#g; s#APISecret=#APISecret='$hanayo_apisecret'#g; s#BanchoAPI=#BanchoAPI=https://c.'$domain'#g; s#MainRippleFolder=#MainRippleFolder='$MasterDir'#g; s#AvatarFolder=#AvatarFolder='$MasterDir'/avatars/avatars#g; s#RedisEnable=false#RedisEnable=true#g' hanayo.conf
 sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#DSN=#DSN='$mysql_usr':'$mysql_psw'@/ripple#'
 sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#API=#API=http://localhost:40001/api/v1/#'
 cd $MasterDir
