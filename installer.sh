@@ -52,7 +52,7 @@ hanayo_apisecret=${hanayo_apisecret:=bruh}
 printf "\n\n..:: DATABASE ::.."
 printf "\nUsername [shibui]: "
 read mysql_usr
-mysql_usr=${mysql_usr:=aoba}
+mysql_usr=${mysql_usr:=shibui}
 printf "\nPassword [meme]: "
 read mysql_psw
 mysql_psw=${mysql_psw:=meme}
