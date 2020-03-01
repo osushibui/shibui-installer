@@ -188,7 +188,7 @@ cd osu.ppy.sh
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 cd inc
 cp config.sample.php config.php
-sed -i 's#root#'$mysql_usr'#g; s#meme#'$mysql_psw'#g; s#allora#ripple#g; s#"redis"#"localhost"#g; s#ripple.moe#'$domain'#g' config.php
+sed -i 's#root#'$mysql_usr'#g; s#lolyouthought#'$mysql_psw'#g; s#ripple#ripple#g; s#"redis"#"localhost"#g; s#shibui.pw#'$domain'#g' config.php
 cd ..
 composer install
 rm -rf secret
